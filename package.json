@@ -4,6 +4,7 @@
     "build": "node esbuild",
     "production": "node esbuild --production",
     "watch": "node esbuild --watch",
+    "prepare": "yarn run snyk-protect",
     "snyk-protect": "snyk protect",
     "coverage:report": "npx nyc report --reporter=clover"
   },
@@ -53,6 +54,7 @@
     "sass": "^1.53.0",
     "showdown": "^2.1.0",
     "snyk": "^1.685.0",
+    "@snyk/protect": "^1.685.0",
     "socket.io": "^4.5.1",
     "socket.io-client": "^4.5.1",
     "sortablejs": "1.9.0",
